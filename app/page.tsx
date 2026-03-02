@@ -284,7 +284,7 @@ export default function Home() {
                 </div>
               </div>
               <a 
-                href={`https://wa.me/62${(settings.socialWhatsapp || '85801036703').replace(/\D/g, '').replace(/^0/, '')}`}
+                href={`https://wa.me/62${(settings.socialWhatsapp || '85186846500').replace(/\D/g, '').replace(/^0/, '')}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-4 hover:opacity-80 transition"
@@ -451,7 +451,7 @@ export default function Home() {
               
               <div className="space-y-6">
                 <a 
-                  href={`https://wa.me/62${(settings.socialWhatsapp || '85801036703').replace(/\D/g, '').replace(/^0/, '')}`}
+                  href={`https://wa.me/62${(settings.socialWhatsapp || '85186846500').replace(/\D/g, '').replace(/^0/, '')}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-start gap-4 hover:opacity-80 transition"
@@ -586,3 +586,4 @@ export default function Home() {
     </main>
   )
 }
+
