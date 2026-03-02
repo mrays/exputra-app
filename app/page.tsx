@@ -27,7 +27,7 @@ export default function Home() {
     siteName: 'eXputra Designs',
     siteTitle: 'Jasa Pembuatan Website Profesional',
     siteDescription: 'Layanan pembuatan website profesional untuk bisnis Anda',
-    socialWhatsapp: '0858-0103-6703',
+    socialWhatsapp: '0851-8684-6500',
   });
   const [templates, setTemplates] = useState<Template[]>([]);
   const [loading, setLoading] = useState(true);
@@ -293,7 +293,7 @@ export default function Home() {
                   <span className="text-2xl">📞</span>
                   <div>
                     <p className="text-sm text-slate-500">Hubungi Kami / WhatsApp</p>
-                    <p className="font-bold text-orange-500">{settings.socialWhatsapp || '0858-0103-6703'}</p>
+                    <p className="font-bold text-orange-500">{settings.socialWhatsapp || '0851-8684-6500'}</p>
                   </div>
                 </div>
               </a>
@@ -461,7 +461,7 @@ export default function Home() {
                   </div>
                   <div>
                     <p className="text-sm text-slate-500 mb-1">Telepon / WhatsApp</p>
-                    <p className="font-semibold text-orange-500 text-lg">{settings.socialWhatsapp || '0858-0103-6703'}</p>
+                    <p className="font-semibold text-orange-500 text-lg">{settings.socialWhatsapp || '0851-8684-6500'}</p>
                   </div>
                 </a>
                 <div className="flex items-start gap-4">
@@ -586,4 +586,5 @@ export default function Home() {
     </main>
   )
 }
+
 
