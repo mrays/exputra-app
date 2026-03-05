@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { BarChart3, Users, Globe, Server, Building2 } from 'lucide-react';
 import Button from '@/components/Button';
+import { formatDateShort } from '@/lib/utils';
 
 interface Stats {
     clients: { total: number; active: number; inactive: number };
@@ -256,3 +257,4 @@ export default function MonitoringPage() {
         </div>
     );
 }
+
