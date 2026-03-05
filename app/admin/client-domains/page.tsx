@@ -330,9 +330,9 @@ export default function DomainsPage() {
                                             )}
                                         </td>
                                         <td className="px-6 py-4 text-sm">
-                                            <div className="font-semibold text-gray-900">{new Date(domain.expiredAt).toLocaleDateString('id-ID')}</div>
+                                            <div className="font-semibold text-gray-900">{formatDateShort(domain.expiredAt)}</div>
                                             {daysLeft > 0 && daysLeft <= 30 && (
-                                                <div className="text-xs text-orange-600 font-semibold">{daysLeft} hari</div>
+                                              <div className="text-xs text-orange-600 font-semibold">{daysLeft} hari</div>
                                             )}
                                             {daysLeft < 0 && (
                                                 <div className="text-xs text-red-600 font-semibold">Berakhir</div>
@@ -667,4 +667,5 @@ function DomainModal({ domain, clients, registrars, servers, onClose, onSuccess 
         </div>
     );
 }
+
 
