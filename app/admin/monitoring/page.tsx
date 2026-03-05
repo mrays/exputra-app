@@ -237,7 +237,7 @@ export default function MonitoringPage() {
                                                 <div className="font-semibold text-gray-900">{domain.client.name}</div>
                                                 <div className="text-xs text-gray-500">{domain.client.email}</div>
                                             </td>
-                                            <td className="px-6 py-4 text-sm text-gray-600">{new Date(domain.expiredAt).toLocaleDateString('id-ID')}</td>
+                                            <td className="px-6 py-4 text-sm text-gray-600">{formatDateShort(domain.expiredAt)}</td>
                                             <td className="px-6 py-4 text-sm">
                                                 <span className={`font-bold ${daysLeft <= 7 ? 'text-red-600' : daysLeft <= 14 ? 'text-orange-600' : 'text-yellow-600'}`}>
                                                     {daysLeft} hari
@@ -257,4 +257,5 @@ export default function MonitoringPage() {
         </div>
     );
 }
+
 
