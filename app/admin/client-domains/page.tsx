@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Globe, Search, Plus, Trash2, Edit, X, Zap } from 'lucide-react';
 import DataExportImport from '@/components/DataExportImport';
+import { formatDateShort } from '@/lib/utils';
 
 interface Client {
     email: string;
@@ -666,3 +667,4 @@ function DomainModal({ domain, clients, registrars, servers, onClose, onSuccess 
         </div>
     );
 }
+
